@@ -1,0 +1,8 @@
+{
+  "cells": 12690,
+  "baseline_clusters": 28,
+  "harmony_clusters": 20,
+  "adjusted_rand_index": 0.31322887949657624,
+  "leiden_median_dominant_sample_fraction": 0.4278444738662659,
+  "leiden_uncorrected_median_dominant_sample_fraction": 0.9768716577540106
+}

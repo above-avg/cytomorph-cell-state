@@ -1,0 +1,8 @@
+{
+  "status": "exploratory",
+  "root_cell": "GSM6360681:GTTGTCCCACTCTGCT-1",
+  "included_cells": 12690,
+  "excluded_disconnected_cells": 0,
+  "components": 1,
+  "warning": "Normal-rooted graph distance, not evidence of longitudinal progression; root and integration dependent"
+}

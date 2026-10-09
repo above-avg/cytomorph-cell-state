@@ -1,0 +1,10 @@
+sample_id,patient_id,patient_id_note,disease_stage,HPV_status,sample_title,prefix,filename_histology
+GSM6360680,GSM6360680,sample accession used as replicate proxy; no donor ID in GEO,Normal HPV-,Negative,"NO_HPV, replicate 1,scRNAseq",GSM6360680_N_HPV_NEG_1,not_applicable
+GSM6360681,GSM6360681,sample accession used as replicate proxy; no donor ID in GEO,Normal HPV-,Negative,"NO_HPV, replicate 2,scRNAseq",GSM6360681_N_HPV_NEG_2,not_applicable
+GSM6360682,GSM6360682,sample accession used as replicate proxy; no donor ID in GEO,Normal HPV+,Positive,"N_HPV, replicate 1,scRNAseq",GSM6360682_N_1,not_applicable
+GSM6360683,GSM6360683,sample accession used as replicate proxy; no donor ID in GEO,Normal HPV+,Positive,"N_HPV, replicate 2,scRNAseq",GSM6360683_N_2,not_applicable
+GSM6360684,GSM6360684,sample accession used as replicate proxy; no donor ID in GEO,HSIL,Positive,"HSIL_HPV, replicate 1,scRNAseq",GSM6360684_HSIL_1,not_applicable
+GSM6360685,GSM6360685,sample accession used as replicate proxy; no donor ID in GEO,HSIL,Positive,"HSIL_HPV, replicate 2,scRNAseq",GSM6360685_HSIL_2,not_applicable
+GSM6360686,GSM6360686,sample accession used as replicate proxy; no donor ID in GEO,Cancer,Positive,"CA_HPV, replicate 1,scRNAseq",GSM6360686_SCC_4,SCC
+GSM6360687,GSM6360687,sample accession used as replicate proxy; no donor ID in GEO,Cancer,Positive,"CA_HPV, replicate 2,scRNAseq",GSM6360687_SCC_5,SCC
+GSM6360688,GSM6360688,sample accession used as replicate proxy; no donor ID in GEO,Cancer,Positive,"CA_HPV, replicate 3,scRNAseq",GSM6360688_ADC_6,ADC

@@ -1,0 +1,35 @@
+{
+  "dataset": "GSE208653",
+  "seed": 42,
+  "qc": {
+    "min_genes": 200,
+    "max_genes": 5000,
+    "max_mt": 15
+  },
+  "resumed": true,
+  "python": "3.10.11",
+  "versions": {
+    "scanpy": "1.10.4",
+    "anndata": "0.11.4",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "pandas": "2.2.3",
+    "igraph": "0.11.8",
+    "leidenalg": "0.10.2",
+    "harmonypy": "0.0.10"
+  },
+  "elapsed_seconds": 477.9,
+  "epithelial_cells": 12690,
+  "samples": [
+    "GSM6360680",
+    "GSM6360681",
+    "GSM6360682",
+    "GSM6360683",
+    "GSM6360684",
+    "GSM6360685",
+    "GSM6360686",
+    "GSM6360687",
+    "GSM6360688"
+  ],
+  "status": "completed"
+}

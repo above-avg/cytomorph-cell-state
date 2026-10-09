@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.h5ad
+*.log
+data/metadata/study.xml
+.ipynb_checkpoints/
+.runtime/

@@ -1,0 +1,12 @@
+{
+  "status": "created",
+  "notebooks": [
+    "01_data_loading",
+    "02_quality_control",
+    "03_integration_clustering",
+    "04_cell_type_annotation",
+    "05_epithelial_progression",
+    "06_differential_expression",
+    "07_patient_robustness"
+  ]
+}
