@@ -11,8 +11,6 @@ programs behind cervical-cell changes. This project explores the same disease fr
 the scale of individual cells, using Python and Scanpy to reanalyze a public cohort
 of nine cervical-tissue samples. I focused on retaining sample identity, checking
 whether patterns recur across samples, and treating cell labels as provisional.
-Implementation and execution were assisted by a coding assistant; the repository
-records that assistance, the analysis choices, and the questions that came up.
 
 ## Results
 

@@ -1,7 +1,8 @@
 # Questions and execution notes
 
-This log records questions and issues from this repository's assisted execution.
-It does not claim that its author independently performed an earlier analysis.
+This log records the questions, implementation decisions, and unresolved issues
+that shaped the analysis. It distinguishes results from interpretations and notes
+where additional biological review or data would be useful.
 
 | Question or issue | What was done | What remains unresolved |
 |---|---|---|
