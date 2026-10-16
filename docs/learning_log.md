@@ -18,5 +18,16 @@ where additional biological review or data would be useful.
 | Can published marker pairs be treated as confirmed findings? | Inspected them as prespecified hypotheses and exported gene coverage. | Patterns may differ by patient, histology, annotation or processing. |
 | Does pseudotime establish cancer progression? | Restricted DPT to a connected component with a declared normal root. | Cross-sectional graph distance is not longitudinal lineage or causality. |
 
-The main biological observation and open question are written in the README
-only after examining the completed result tables.
+## Follow-up: cell-type-specific host programs
+
+The new analysis separates the normal-tissue HPV-status comparison from lesion
+contrasts. In epithelial, T/NK and myeloid cells, normal HPV-status interferon
+differences reverse direction after some sample omissions; the cancer-versus-HSIL
+differences remain positive. This raises a more specific question: which apparent
+early host responses recur across donors once sample variation is better resolved?
+
+The audit found no explicitly viral-labelled features in the nine deposited
+feature lists. That prevents interpreting these host-program scores as direct
+viral expression or integration evidence. The next data requirement is documented
+in the project-alignment note. Cell-level infection status must not be copied
+from the tissue-level HPV label.

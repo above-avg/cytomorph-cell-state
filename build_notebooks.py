@@ -23,7 +23,7 @@ def code(s): return nbf.v4.new_code_cell(s)
 
 SPECS = [
     ('01_data_loading', 'The cohort and its biological question', [
-        md('Do epithelial states differ across cervical disease groups, and are patterns shared across samples? The clinical groups are cross-sectional. No paired PAP-smear images are available.\n\nThe full analysis is performed by `run_analysis.py`; these executed notebooks inspect its saved real outputs. Download and checkpoint commands are included for reproduction, without repeating expensive processing in every notebook.'),
+        md('Do epithelial states differ across cervical disease groups, and are patterns shared across samples? The clinical groups are cross-sectional. No paired PAP-smear images are available.\n\nThe full analysis is performed by `run_analysis.py`; these walkthrough notebooks inspect its saved real outputs. Download and checkpoint commands are included for reproduction, without repeating expensive processing in every notebook.'),
         code("samples = table('data/metadata/samples.csv')\ndisplay(samples[['sample_id', 'disease_stage', 'HPV_status', 'filename_histology']])\nprint(samples.groupby('disease_stage').size())"),
         md('Sample accessions act as replicate proxies. Separate donor identifiers are not supplied by GEO. Cancer filenames distinguish SCC and ADC; this can complicate a shared cancer signature.'),
         code("import scanpy as sc\na = sc.read_h5ad(ROOT / 'data/processed/GSM6360680_counts.h5ad', backed='r')\nprint(a)\ndisplay(a.obs[['barcode', 'sample_id', 'patient_id', 'disease_stage', 'HPV_status']].head())\na.file.close()"),
@@ -58,7 +58,7 @@ SPECS = [
         md('Stage bars average within-sample fractions equally; large samples do not dominate. Fractions concern recovered cells, not tissue abundance. A state enriched in one cancer sample is not automatically cancer-associated across the cohort.\n\n**Question:** Which epithelial state is shared by multiple cancer samples, and which is dominated by one sample?'),
     ]),
     ('06_differential_expression', 'Marker rankings, programs, and sample-level summaries', [
-        md('Cluster markers use Wilcoxon versus the remaining cells. For disease-group contrasts, epithelial raw counts are summed by sample into pseudobulk. LogCPM differences are descriptive effect summaries; no patient-level significance test is claimed.'),
+        md('Cluster markers use Welch t-test rankings versus the remaining cells, restricted to the 500 most variable genes among the selected HVGs. For disease-group contrasts, epithelial raw counts are summed by sample into pseudobulk. LogCPM differences are descriptive effect summaries; no patient-level significance test is claimed.'),
         code("display(table('results/markers/epithelial_top20.csv').groupby('group').head(5))\ndisplay(table('results/signatures/epithelial_pseudobulk_samples.csv'))"),
         code("coverage = table('results/signatures/epithelial_gene_coverage.csv')\ndisplay(coverage)\nfigure('progression/epithelial_signature_scores.png')"),
         code("effects = table('results/markers/epithelial_sample_level_effects.csv.gz', index_col=0)\ndisplay(effects.sort_values('Cancer_minus_normal_logcpm', ascending=False).head(20))"),

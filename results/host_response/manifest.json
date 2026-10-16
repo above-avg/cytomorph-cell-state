@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "samples": 9,
+  "min_cells_per_sample_cell_type": 20,
+  "evaluated_contrasts": 128,
+  "skipped_contrasts": 0,
+  "omission_folds": 696,
+  "eligible_sample_cell_type_rows": 71,
+  "cells": 68803,
+  "programs": [
+    "Interferon_response",
+    "Cell_cycle",
+    "Cytotoxicity",
+    "Inhibitory_receptors"
+  ],
+  "checkpoint_sha256": "d70f0005f40c2410963c194ebb161e53d93243fa93e4b963e3f3f28d6d333403",
+  "sample_metadata_sha256": "58cbf2582b907c8aa9aafe6d5dcaf407d07c064814e1eed93386e3f667425c99",
+  "interpretation": "Conditional sample omission; no refitting of annotation or normalization; no causal HPV or integration claim"
+}

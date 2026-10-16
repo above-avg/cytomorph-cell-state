@@ -12,6 +12,33 @@ the scale of individual cells, using Python and Scanpy to reanalyze a public coh
 of nine cervical-tissue samples. I focused on retaining sample identity, checking
 whether patterns recur across samples, and treating cell labels as provisional.
 
+## New milestone: cell-type-specific host responses
+
+To move toward HPV–host and multimodal research, the project now evaluates four
+host-expression programs across eight provisional cell types. The extension
+separates HPV status in normal tissue from lesion-stage contrasts and reports
+128 sample-level comparisons, single-sample omission ranges, and an SCC-only
+cancer sensitivity analysis.
+
+**Demonstrable finding:** epithelial, T/NK and myeloid interferon differences
+between normal HPV+ and HPV- tissue change direction under sample omission.
+Their cancer-versus-HSIL differences remain positive under every omission.
+The T/NK inhibitory-receptor pattern is non-monotonic across the four groups.
+These observations motivate better resolved host–virus measurements; they do
+not establish causal HPV effects or immune exhaustion.
+
+[View the results and figures](docs/host_response_results.md) ·
+[Alignment with the proposed multimodal project](docs/professor_alignment.md)
+
+```powershell
+python -m src.host_response
+```
+
+Run this after the primary pipeline. A scan of all nine original feature files
+found no explicitly HPV-labelled features. This does not establish absence of
+viral reads or integration; sequence-level evidence and chromatin inputs are
+still needed for those parts of the proposed project.
+
 ## Results
 
 The executed workflow retained **68,803 of 83,959 cells** after the stated QC

@@ -40,7 +40,7 @@ def markers(a, group, prefix):
     print('Marker ranking', prefix, flush=True)
     # Descriptive cell-level rankings, NOT patient-level disease significance.
     # Restrict ranking to the 500 most variable genes. Ranking every detected
-    # gene across ~69k cells is needlessly expensive; this prespecified subset
+    # gene across ~69k cells is expensive; this computationally restricted subset
     # keeps candidate marker discovery tractable and reproducible.
     work = a[:, a.var['highly_variable']].copy()
     keep = np.argsort(work.var['dispersions_norm'].to_numpy())[-500:]

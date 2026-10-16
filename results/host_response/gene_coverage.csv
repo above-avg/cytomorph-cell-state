@@ -1,0 +1,5 @@
+program,present,missing
+Interferon_response,ISG15;IFIT1;IFIT3;MX1;OAS1;STAT1,
+Cell_cycle,MKI67;TOP2A;PCNA;MCM2;MCM5;TYMS,
+Cytotoxicity,NKG7;GNLY;PRF1;GZMB;GZMH,
+Inhibitory_receptors,PDCD1;LAG3;TIGIT;HAVCR2;CTLA4,
